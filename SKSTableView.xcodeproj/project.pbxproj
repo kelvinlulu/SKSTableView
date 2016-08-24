@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D9CF1D21CA5879A007BD489 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D9CF1D11CA5879A007BD489 /* Launch Screen.storyboard */; };
 		A5C1F34D18783FB400D0D1DE /* SKSTableViewCellIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C1F34C18783FB400D0D1DE /* SKSTableViewCellIndicator.m */; };
 		A5EE933B186C590900811B16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EE933A186C590900811B16 /* Foundation.framework */; };
 		A5EE933D186C590900811B16 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EE933C186C590900811B16 /* CoreGraphics.framework */; };
@@ -23,10 +22,10 @@
 		A5EE9360186C590900811B16 /* SKSTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EE935F186C590900811B16 /* SKSTableViewTests.m */; };
 		A5EE936C186C593B00811B16 /* SKSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EE936B186C593B00811B16 /* SKSTableView.m */; };
 		A5EE9370186C5A2200811B16 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EE936E186C5A2200811B16 /* ViewController.m */; };
-		A5EE9371186C5A2200811B16 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5EE936F186C5A2200811B16 /* ViewController.xib */; };
 		A5EE9374186C5F2F00811B16 /* SKSTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EE9373186C5F2F00811B16 /* SKSTableViewCell.m */; };
 		A5EE9376186C621200811B16 /* expandableImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A5EE9375186C621200811B16 /* expandableImage.png */; };
 		A5EE9378186C794B00811B16 /* expandableImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5EE9377186C794B00811B16 /* expandableImage@2x.png */; };
+		E26E44D41D6D514D00AE27AC /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26E44D31D6D514D00AE27AC /* ViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8D9CF1D11CA5879A007BD489 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A5C1F34B18783FB400D0D1DE /* SKSTableViewCellIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSTableViewCellIndicator.h; sourceTree = "<group>"; };
 		A5C1F34C18783FB400D0D1DE /* SKSTableViewCellIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSTableViewCellIndicator.m; sourceTree = "<group>"; };
 		A5EE9337186C590900811B16 /* SKSTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKSTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,11 +61,11 @@
 		A5EE936B186C593B00811B16 /* SKSTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSTableView.m; sourceTree = "<group>"; };
 		A5EE936D186C5A2200811B16 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A5EE936E186C5A2200811B16 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A5EE936F186C5A2200811B16 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		A5EE9372186C5F2F00811B16 /* SKSTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSTableViewCell.h; sourceTree = "<group>"; };
 		A5EE9373186C5F2F00811B16 /* SKSTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSTableViewCell.m; sourceTree = "<group>"; };
 		A5EE9375186C621200811B16 /* expandableImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = expandableImage.png; sourceTree = "<group>"; };
 		A5EE9377186C794B00811B16 /* expandableImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "expandableImage@2x.png"; sourceTree = "<group>"; };
+		E26E44D31D6D514D00AE27AC /* ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +129,7 @@
 				A5EE934A186C590900811B16 /* AppDelegate.m */,
 				A5EE936D186C5A2200811B16 /* ViewController.h */,
 				A5EE936E186C5A2200811B16 /* ViewController.m */,
-				A5EE936F186C5A2200811B16 /* ViewController.xib */,
-				8D9CF1D11CA5879A007BD489 /* Launch Screen.storyboard */,
+				E26E44D31D6D514D00AE27AC /* ViewController.storyboard */,
 				A5EE9369186C591700811B16 /* SKSTableViewImp */,
 				A5EE934C186C590900811B16 /* Images.xcassets */,
 				A5EE9341186C590900811B16 /* Supporting Files */,
@@ -259,9 +256,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D9CF1D21CA5879A007BD489 /* Launch Screen.storyboard in Resources */,
 				A5EE9345186C590900811B16 /* InfoPlist.strings in Resources */,
-				A5EE9371186C5A2200811B16 /* ViewController.xib in Resources */,
+				E26E44D41D6D514D00AE27AC /* ViewController.storyboard in Resources */,
 				A5EE9376186C621200811B16 /* expandableImage.png in Resources */,
 				A5EE934D186C590900811B16 /* Images.xcassets in Resources */,
 				A5EE9378186C794B00811B16 /* expandableImage@2x.png in Resources */,

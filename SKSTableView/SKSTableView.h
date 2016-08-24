@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-/** 
+/**
  *  SKSTableView is a custom table view class extended from UITableView class. This class provides a single-level hierarchical
- *  structure for your contents. In order to minimalize the effectiveness of the table view, the default insertion and remove 
+ *  structure for your contents. In order to minimalize the effectiveness of the table view, the default insertion and remove
  *  mechanism of UITableView (insertRowsAtIndexPaths:withRowAnimation: and deleteRowsAtIndexPaths:withRowAnimation:) is used.
  *  Main rows of your table view, which can be expandable or not must be instances of SKSTableViewCell class. Subrows can be
  *  instances of any class that is extended from UITableViewCell.
@@ -43,14 +43,14 @@
  *  @param tableView The instance of SKSTableView class.
  *
  *  @param indexPath The index path for the subrow. It has three properties that shows the exact position of the subrow cell.
- *                      These properties are named as section, row and subrow, all of which refers to the index of the object 
+ *                      These properties are named as section, row and subrow, all of which refers to the index of the object
  *                      at the content array defined as data source of the table view.
  *
  *  @return The instance for the cell of subrow at the given indexPath.
  *
  *  @discussion In order to implement SKSTableView class efficiently, your content for the data source of the table view should
  *                  be designed as:
- *                      
+ *
  *                                  contentArray[[(Section0)[row0,subrow1,subrow2,...],[row1,subrow1,subrow2,...],
  *                                  [row2, subrow1,subrow2,...],...],[(Section1)[...],[...],[...], ...],...]
  *
@@ -86,7 +86,7 @@
  *
  *  @param tableView The instance of SKSTableView class.
  *
- *  @param indexPath The indexPath for the subrow. It has three properties that shows the exact position of the 
+ *  @param indexPath The indexPath for the subrow. It has three properties that shows the exact position of the
  *   subrow cell. These properties are named as section, row and subrow, all of which refers to the index of the
  *   object at the content array defined as data source of the table view.
  */
@@ -118,7 +118,7 @@
 /**
  * A Boolean value indicating whether only one cell can be expanded at a time.
  *
- *  @discussion When set to YES, already-expanded cell is collapsed automatically before newly-selected cell is being expanded. 
+ *  @discussion When set to YES, already-expanded cell is collapsed automatically before newly-selected cell is being expanded.
  *      The default value for this property is NO.
  */
 @property (nonatomic, assign) BOOL shouldExpandOnlyOneCell;
@@ -126,7 +126,7 @@
 /**
  * Reload data for table view while collapsing already expanded index paths.
  *
- *  @discussion It is requested to scroll to a specific position after reload data, use refreshDataWithScrollingToIndexPath: method. This method does not change scroll 
+ *  @discussion It is requested to scroll to a specific position after reload data, use refreshDataWithScrollingToIndexPath: method. This method does not change scroll
  *      position.
  */
 - (void)refreshData;
@@ -142,6 +142,16 @@
  * Collapses all currently-expanded cells in the tableview altogether. No subrow is displayed, just main rows.
  */
 - (void)collapseCurrentlyExpandedIndexPaths;
+
+/*
+ *  expand all subrows cells in the tableview algogether. All subrow is displayed
+ */
+- (void)expandAllSubrows;
+
+/**
+ * delete cell at indexPaths
+ */
+- (void)sks_deleteRowsAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths withRowAnimation:(UITableViewRowAnimation)animation;
 
 @end
 
@@ -166,5 +176,7 @@
  *  @return An initialized NSIndexPath object.
  */
 + (NSIndexPath *)indexPathForSubRow:(NSInteger)subrow inRow:(NSInteger)row inSection:(NSInteger)section;
+
+- (BOOL)isEqual:(id)object;
 
 @end

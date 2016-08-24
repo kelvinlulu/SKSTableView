@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 /**
- *  SKSTableViewCellIndicator is a custom class extended from UIView class. It is used to add a indicator view as subview for 
+ *  SKSTableViewCellIndicator is a custom class extended from UIView class. It is used to add a indicator view as subview for
  *  the SKSTableViewCell object when it is expanded.
  */
 
